@@ -9,7 +9,70 @@
 </head>
 
 <body>
-  <script src="1-7.js"></script>
+  <h4 id="title">안녕하세요</h4>
+  <a href="https://naver.com" class="link">링크</a>
+  <a class="naver" href="naver.com">링크</a>
+  <a class="naver" href="naver.com">링크</a>
+  <a class="naver" href="naver.com">링크</a>
+  <button id="button">버튼</button>
+  <img id="image" src="test.jpg">
+  <script src="1-11.js"></script>
+  <!-- <script>
+    // {object} 자료형으로 LOL 캐릭터들의 정보를 정리하자
+    // 아래 처럼 비슷한 object 많이 만들일 있으면 class 만들어 쓰세요
+    // class는 object 뽑는 기계일뿐
+
+    // 옛날 문법에서 class 생성
+    // this ? => 기계로부터 생성되는 object
+    function 기계(구멍) {
+      this.q = 구멍
+      this.w = 'snowball'
+    }
+    // 새로 생성되는 object에 {q:'consume'} 추가해주셈
+    // 새로 생성되는 object에 {w:'snowball'} 추가해주셈
+
+    // 코딩애플식 정의 : prototype은 유전자임
+    // prototype에 뭔가 추가하면..
+    // 자식들이 사용가능
+    기계.prototype.name = 'wook'
+
+    // 기계에다가 직접 쓰면 자식이 {q:'strike'} 직접 가짐
+    // 유전자에다가 쓰면 부모만 {name:'wook'} 가짐
+    // 부모 유전자에 있는걸 자식이 사용가능한 이유?
+    // nunu가 name을 가지고 있지 않으면? => nunu 부모 유전자를 뒤진다.
+
+    // object에서 자료 뽑을 때 일어나는 일
+    // 1. 직접 자료를 가지고 있으면 그거 출력
+    // 2. 없으면 부모 유전자까지 뒤짐
+    // 3. 없으면 부모의 부모 유전자까지
+    // 애미애비 없을 때까지 계속함 => prototype chain 어쩌구
+
+    var 어레이 = [4, 2, 1] // 인간의 방식
+    var 어레이 = new Array(4, 2, 1) // 컴퓨터의 방식
+    // Q array 자료에 .sort() 붙일 수 있는 이유가 뭐게요
+
+    Array.prototype.함수 = function () {}
+
+    var nunu = new 기계('consume')
+    var garen = new 기계('strike')
+    // var nunu = {
+    //   q: 'consume',
+    //   w: 'snowball'
+    // }
+
+    // var garen = {
+    //   q: 'strike',
+    //   w: 'courage'
+    // }
+
+    // ES6 class 문법
+    class Hero {
+      constructor(구멍) {
+        this.q = 구멍
+        this.w = 'snowball'
+      }
+    }
+  </script> -->
 </body>
 
 </html>

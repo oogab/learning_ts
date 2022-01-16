@@ -16,7 +16,7 @@
 
 // Assertion
 // 타입 덮어쓰기
-function 내함수(x :number|string) {
+function 내함수2(x :number|string) {
   let array :number[] = []
   array[0] = x as number
 }
@@ -28,7 +28,7 @@ function 내함수(x :number|string) {
 // 2. 무슨 타입이 들어올지 100% 확실할 때 씁니다.
 // 버그 추적이 안된다... (그래서 굳이 쓸 필요가 없다!)
 
-내함수(123);
+내함수2(123);
 
 // (숙제1) 숫자여러개를 array 자료에 저장해놨는데
 // 가끔 '4', '5' 이런 식의 문자타입의 숫자가 발견되고 있습니다.
