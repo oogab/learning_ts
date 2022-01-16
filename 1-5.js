@@ -1,8 +1,5 @@
 function 함수(x) {
-    if (x의)
-        타입이;
-    숫자면;
-    {
+    if (typeof x === 'number') {
         console.log(x + 3);
     }
 }
