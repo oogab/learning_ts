@@ -1,3 +1,4 @@
+// Object에 타입지정하는 방법 => interface
 // type Square = { color : string, width : number}
 interface Square {
   color : string,
