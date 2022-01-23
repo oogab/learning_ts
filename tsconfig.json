@@ -3,6 +3,12 @@
     "target": "ES5",
     "module": "es2015",
     "noImplicitAny": true,
-    "strictNullChecks": true
+    "strictNullChecks": true,
+    "declaration": true,
+    // 이러면 ts 파일마다 d.ts 파일 자동 생성됨
+    // "typeRoots": ["./types"] // 폴더명 아무거나
+    // 여기있는 파일들은 글로벌하게 쓸 수 있게 해주세요~
+    // typeRoots 따로 설정해 놓으면
+    // 자동으로 @types 포함 안해줌
   }
 }

@@ -1,0 +1,10 @@
+declare type AGe<T> = T extends string ? string : unknown;
+declare let aaaa: AGe<string>;
+declare let a2: AGe<number>;
+declare type 타입추출<T> = T extends (() => infer R) ? R : unknown;
+declare type f = 타입추출<() => void>;
+declare type Ddd<T> = T extends [string, ...any] ? T[0] : unknown;
+declare let ddd: Ddd<[string, number]>;
+declare let ddc: Ddd<[boolean, number]>;
+declare type 타입뽑기<T> = T extends (x: infer R) => void ? R : unknown;
+declare type 뽑은타입 = 타입뽑기<(x: number) => void>;
